@@ -71,5 +71,9 @@ sudo apt install pv
 
 ```bash
 sudo su -
-git clone https://github.com/ShubhamKumar89/DEK.git
+git clone https://github.com/ShubhamKumar89/pwek-OpenDEK  ~/dek
+cd dek/
+./dek_provision.py --init-config > custom.yml
+
+
 ```
