@@ -74,4 +74,5 @@ sudo su -
 git clone https://github.com/ShubhamKumar89/pwek-OpenDEK  ~/dek
 cd dek/
 ./dek_provision.py --init-config > custom.yml
+./dek_provision.py --run-esp-for-usb-boot --config=custom.yml
 ```
