@@ -105,8 +105,8 @@ profiles:
   
     # Secure boot and trusted media platform options.
     bios:
-      secure_boot: true
-      tpm: true
+      secure_boot: false
+      tpm: false
 
 
     # Experience Kit group_vars overrides.
@@ -125,6 +125,8 @@ profiles:
     group_vars:
       groups:
         all:
+          sgx_enabled: false
+          platform_attestation_node: false
         controller_group:
         edgenode_group:
 
@@ -185,7 +187,7 @@ profiles:
 #   - name: node2
 #     bios:
 #       tpm: false
-#       secure_boot: true
+#       secure_boot: false
 #     bmc: # bmc data allows to switch TPM and Secure Boot
 #       address: 1.2.3.4
 #       user: user
