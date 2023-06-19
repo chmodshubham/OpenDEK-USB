@@ -91,7 +91,7 @@ cd dek/
 ./dek_provision.py --init-config > custom.yml
 ```
 
-Copy `custom.yml` from this repo to the `custom.yml` in your system and change the `host_ip` section with your IP.
+Copy the changes from the `custom.yml` in this repository to the `custom.yml` in the `dek` directory and change the `host_ip` section with your IP.
 
 ```bash
 ./dek_provision.py --run-esp-for-usb-boot --config=custom.yml
