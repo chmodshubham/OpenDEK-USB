@@ -75,6 +75,9 @@ pip3 install PyYAML fqdn
 ```bash
 sudo apt install net-tools
 
+# for searching 
+sudo apt install silversearcher-ag
+
 # to get the progress output of flashing the USB drive
 sudo apt install pv 
 ```
@@ -86,5 +89,10 @@ sudo su -
 git clone https://github.com/ShubhamKumar89/pwek-OpenDEK  ~/dek
 cd dek/
 ./dek_provision.py --init-config > custom.yml
+```
+
+Copy `custom.yml` from this repo to the `custom.yml` in your system and change the `host_ip` section with your IP.
+
+```bash
 ./dek_provision.py --run-esp-for-usb-boot --config=custom.yml
 ```
