@@ -96,3 +96,11 @@ Copy the changes from the `custom.yml` in this repository to the `custom.yml` in
 ```bash
 ./dek_provision.py --run-esp-for-usb-boot --config=custom.yml
 ```
+
+## Flash the Installation Image
+
+Change the `sdb` with your flash drive. To check all the attached USBs, use `lsblk`.
+
+```bash
+./dek_flash.sh --image ./out/SEO_DEK-efi.img --bios efi --dev /dev/sdb1
+```
