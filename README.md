@@ -52,8 +52,8 @@ docker compose version
 If `docker-compose` is not installed correctly, then use this(*least recommended*):
 
 ```bash
-sudo apt-get update
-sudo apt-get install docker-compose-plugin
+sudo apt update
+sudo apt install docker-compose
 ```
 
 #### git
