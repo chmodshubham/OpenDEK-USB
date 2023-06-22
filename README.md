@@ -102,5 +102,5 @@ Copy the changes from the `custom.yml` in this repository to the `custom.yml` in
 Change the `sdb` with your flash drive. To check all the attached USBs, use `lsblk`.
 
 ```bash
-./dek_flash.sh --image ./out/SEO_DEK-efi.img --bios efi --dev /dev/sdb1
+./esp/flashusb.sh --image ./out/Smart_Edge_Open_Developer_Experience_Kits-efi.img --bios efi --dev /dev/sdb
 ```
